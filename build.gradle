@@ -11,7 +11,7 @@ dependencies {
     gatling 'org.scala-lang:scala-library:2.13.15'
     gatlingImplementation 'io.gatling:gatling-core:3.12.0'
     gatlingImplementation 'io.gatling:gatling-http:3.12.0'
-    gatlingImplementation 'io.gatling.highcharts:gatling-charts-highcharts:3.12.0'
+    gatlingImplementation 'io.gatling.highcharts:gatling-charts-highcharts:3.13.1'
 }
 
 sourceSets {
