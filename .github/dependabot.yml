@@ -5,7 +5,18 @@
 
 version: 2
 updates:
-  - package-ecosystem: "gradle" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "gradle"
+    directory: "/"
     schedule:
       interval: "weekly"
+    auto-merge: true
+    groups:
+      patches:
+        patterns:
+          - "*"
+    versioning-strategy: auto
+    pull-request-branch-name:
+      separator: "-"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
