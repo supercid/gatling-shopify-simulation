@@ -9,14 +9,14 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    auto-merge: true
-    groups:
-      patches:
-        patterns:
-          - "*"
-    versioning-strategy: auto
+    versioning-strategy: "increase-if-necessary"
     pull-request-branch-name:
       separator: "-"
     commit-message:
       prefix: "chore"
       include: "scope"
+
+groups:
+  patches:
+    patterns:
+      - "*"
